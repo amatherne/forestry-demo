@@ -8,10 +8,10 @@ menu:
   footer:
     identifier: _posts
     url: "/posts/"
-    weight: 2
+    weight: 1
   navigation:
     identifier: _posts
     url: "/posts/"
-    weight: 3
+    weight: 4
     title: Blog
 ---

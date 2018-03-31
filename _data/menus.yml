@@ -1,6 +1,9 @@
 ---
 navigation:
+- url: "/"
+  weight: 6
+  title: Home
 - identifier: 
-  url: "/"
+  url: "#"
   weight: 5
   title: Music
