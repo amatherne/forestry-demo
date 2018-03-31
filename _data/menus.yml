@@ -1,6 +1,7 @@
 ---
 navigation:
-- url: "/"
+- identifier: 
+  url: "/"
   weight: 1
   title: Home
 - identifier: 
