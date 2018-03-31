@@ -1,13 +1,16 @@
-<!-- includes/featured-projects -->
-<div class="featured-projects">
+<!-- includes/featured-post -->
+<div class="featured-post">
 	<div class="container padding">
 		<h2 class="h1 page-title">Recent Posts</h2>	
 		<div class="grid">
-			{% for p in site.projects %}
+			{% comment %}{% for p in site.projects %}
 				<div class="grid__item small--one-half medium-up--one-quarter">
 					{% include project-post.html %}
 				</div>
-			{% endfor %}
+			{% endfor %}{% endcomment %}
+
+
+
 		</div>
 	</div>
 </div>

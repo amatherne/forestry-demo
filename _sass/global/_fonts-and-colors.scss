@@ -40,6 +40,14 @@
 	  	}
 	}
 
+	.page-title {
+		text-align:center;
+		margin:0 0 ($bodyLineHeight * 1);
+		color:$beige;
+		font-weight:900;
+		letter-spacing: -0.05em;
+	}
+
 
 // RTE and Basic Defaults
 
