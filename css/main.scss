@@ -22,11 +22,17 @@
 @import "modules/footer";
 @import "modules/hero";
 
+// Snippets
+// --------
+
+@import "snippets/project-post";
+
 
 // Pages
 // =====
 
 @import "pages/landing-page";
 @import "pages/pages";
+@import "pages/projects";
 // @import "pages/about";
 

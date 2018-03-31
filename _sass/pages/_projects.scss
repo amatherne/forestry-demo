@@ -1,0 +1,27 @@
+.template--projects {
+	background-color:$orange;
+	.mainContent {
+		margin-top:($bodyLineHeight * 2.5);
+		// padding:0;
+	}
+	.page-title {
+		text-align:center;
+		margin:0 0 ($bodyLineHeight * 1);
+		color:$beige;
+		font-weight:900;
+		letter-spacing: -0.05em;
+	}
+	.site-header {
+		ul {
+
+			li {
+				a {
+					color:$beige;
+				}
+			}
+		}
+	}
+}
+
+
+

@@ -9,6 +9,10 @@
 	width:100%;
 	max-width:$width-cont;
 	margin:0 auto;
+
+	&.padding {
+		padding:0 $bodyLineHeight;
+	}
 }
 
 .center-content {
@@ -24,7 +28,15 @@
 	@include visually-hidden();
 }
 
+.background-image {
+	min-height:100px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
 .square {
 	@include squared();
 }
+
 
