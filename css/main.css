@@ -275,6 +275,13 @@ h5, .h5 {
 h6, .h6 {
   font-size: 0.7142857143em; }
 
+.page-title {
+  text-align: center;
+  margin: 0 0 1.5em;
+  color: #f8f8dd;
+  font-weight: 900;
+  letter-spacing: -0.05em; }
+
 p {
   margin: 0 0 0.75em;
   line-height: 1.5em;
@@ -1528,6 +1535,60 @@ a {
       font-size: 2.25em;
       margin-bottom: 2em; }
 
+.featured-projects {
+  overflow: hidden;
+  background-color: #f2ae72;
+  padding: 3em 0;
+  box-shadow: inset 0px 20px 15px -13px rgba(51, 55, 69, 0.7), inset 0px -15px 10px -10px rgba(51, 55, 69, 0.7);
+  margin-bottom: 3em; }
+
+.project-post {
+  padding: 1.5em; }
+  .project-post .tag {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    min-height: 40px; }
+  .project-post .background-image {
+    border: 1vw solid #f8f8dd;
+    box-shadow: 5px 6px 7px rgba(51, 55, 69, 0.4);
+    transition: all .1s linear;
+    padding-top: calc(100% - 2vw) !important; }
+  .project-post .post-meta {
+    padding: 0.75em; }
+  .project-post .h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin: 0; }
+  .project-post .tag,
+  .project-post .h3,
+  .project-post .date {
+    color: #333745;
+    text-shadow: 1px 2px 3px rgba(51, 55, 69, 0.4);
+    transition: all .1s linear; }
+  .project-post .underline {
+    background-color: #333745;
+    height: 1px;
+    width: 90%;
+    margin: 0.75em auto;
+    box-shadow: 1px 2px 3px rgba(51, 55, 69, 0.4);
+    transition: all .1s linear; }
+  .project-post a {
+    text-decoration: none; }
+    .project-post a:hover .background-image {
+      border: 1vw solid #f8f8dd;
+      box-shadow: 1px 3px 5px rgba(51, 55, 69, 0.6); }
+    .project-post a:hover .underline {
+      background-color: #f8f8dd;
+      box-shadow: 1px 1px 2px rgba(51, 55, 69, 0.6); }
+    .project-post a:hover .tag,
+    .project-post a:hover .h3,
+    .project-post a:hover .date {
+      color: #f8f8dd;
+      text-shadow: 1px 1px 2px rgba(51, 55, 69, 0.6); }
+
 .template--landing-page .mainContent {
   margin-top: 0;
   padding: 0; }
@@ -1541,11 +1602,5 @@ a {
   background-color: #f2ae72; }
   .template--projects .mainContent {
     margin-top: 3.75em; }
-  .template--projects .page-title {
-    text-align: center;
-    margin: 0 0 1.5em;
-    color: #f8f8dd;
-    font-weight: 900;
-    letter-spacing: -0.05em; }
   .template--projects .site-header ul li a {
     color: #f8f8dd; }
