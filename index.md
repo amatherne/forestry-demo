@@ -1,6 +1,6 @@
 ---
 title: Home
-banner_image: "/img/banner.png"
+banner_image: "/uploads/2018/03/31/sea-1804591_1920.jpg"
 layout: landing-page
 heading: Web Development
 partners: []
