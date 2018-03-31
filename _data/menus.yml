@@ -1,7 +1,7 @@
 ---
 navigation:
 - url: "/"
-  weight: 6
+  weight: 1
   title: Home
 - identifier: 
   url: "#"
