@@ -19,4 +19,8 @@ hero_button:
   text: Learn more
   href: "/services"
 show_news: false
+menu:
+  navigation:
+    weight: 3
+    title: Portfolio
 ---
