@@ -19,9 +19,4 @@ hero_button:
   text: Learn more
   href: "/services"
 show_news: false
-menu:
-  navigation:
-    identifier: _index
-    url: "/"
-    weight: 1
 ---
