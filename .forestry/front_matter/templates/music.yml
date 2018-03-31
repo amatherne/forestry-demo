@@ -33,8 +33,3 @@ fields:
 - type: list
   name: tech
   label: Tech
-- type: text
-  name: layout
-  label: Layout
-  default: musics
-  hidden: true
