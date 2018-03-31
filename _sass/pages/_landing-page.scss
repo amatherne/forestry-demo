@@ -1,0 +1,18 @@
+.template--landing-page {
+	.mainContent {
+		margin-top:0;
+		padding:0;
+	}
+
+	.site-header {
+		ul {
+
+			li {
+				a {
+					color:$beige;
+					padding:($bodyLineHeight / 4) ($bodyLineHeight / 2);
+				}
+			}
+		}
+	}
+}

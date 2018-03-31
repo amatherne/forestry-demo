@@ -1,0 +1,39 @@
+// Navigation
+	.site-header {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		z-index:10;
+		.container {
+			padding:($bodyLineHeight / 2) $bodyLineHeight;
+		}
+		ul {
+			margin:0;
+			padding:0;
+			li {	
+				display:inline-block;
+				margin:0;
+				padding:0;
+				a {
+					display:block;
+					text-align:center;
+					padding:($bodyLineHeight / 4) ($bodyLineHeight / 2);
+					text-decoration:none;
+				}
+			}
+		}
+
+		.logo {
+			// display:inline-block;
+			img {
+				max-width:100px;
+				// margin:0 auto;
+				display:block;
+			}
+		}
+
+		@media screen and (min-width:$grid-medium) {
+
+		}
+	}
