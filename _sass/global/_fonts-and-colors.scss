@@ -1,7 +1,7 @@
 // body
 // ----
 	body {
-	    background:$bodyBG !important;
+	    background:$bodyBG;
 	    font-family:$bodyFont;
 	    color:$bodyTextColor;
 	    line-height:$bodyLineHeight;
@@ -31,6 +31,73 @@
 			// font-family: $baseFontFamily !important;
 		}
 	}
+
+	// Modular Size Loop
+	// -----------------
+	@for $i from 1 through 6 {
+	  	h#{$i}, .h#{$i} {
+	    	font-size: modular-scale((5 - $i), $bodyFontSize, 1.4);
+	  	}
+	}
+
+
+// RTE and Basic Defaults
+
+
+
+
+	// Body text
+	// ----------
+		p {
+			margin: 0 0 $bodyLineHeight / 2;
+			line-height:$bodyLineHeight;
+			color:$bodyTextColor;
+			font-size:$bodyFontSize;
+		}
+
+
+		label {
+			// font-family: $headlineFontFamily;
+			color: $headlineFontColor;
+			font-weight: $headlineFontWeight;
+			font-size:$bodyFontSize - 1;
+
+		}
+		a {
+			color: $linkColor;
+			text-decoration: none;
+			&:hover {
+				color: $linkColorHover;
+				text-decoration: underline;
+			}
+		}
+
+	// RTE text
+	// --------
+		.rte {
+			margin:1em auto;
+			max-width:800px;
+			@for $i from 1 through 6 {
+			  	h#{$i}, .h#{$i} {
+			    	font-size: modular-scale((6 - $i), $bodyFontSize, 1.2);
+			  	}
+			}
+			a {
+				color: $linkColor;
+				text-decoration: none;
+				&:hover {
+					color: $linkColorHover;
+					text-decoration: underline;
+				}
+			}
+			blockquote {
+		    	border-left:3px solid $borderColor;
+		    	padding:1em;
+		    	background:$orange;
+		    	color:$dark;
+			}
+		}
+
 
 // Borders
 // -------
@@ -70,7 +137,7 @@
 		&:hover {
 			border:1px solid $btnBorderHoverColor !important;
 			background-color:$btnBgHoverColor !important;
-			text-decoration: none;
+			text-decoration: none !important;
 			color: $btnTextHoverColor !important;
 
 		}

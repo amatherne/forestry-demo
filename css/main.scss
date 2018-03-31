@@ -6,10 +6,10 @@
 // Global
 // ======
 
-// @import "global/default";
-@import "global/bourbon/bourbon";
 @import "global/mixins";
 @import "global/variables";
+@import "global/default";
+@import "global/bourbon/bourbon";
 @import "global/fonts-and-colors";
 @import "global/grid";
 @import "global/global";

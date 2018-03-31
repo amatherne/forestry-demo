@@ -14,3 +14,16 @@
 .center-content {
 	@include centered();
 }
+
+.mainContent {
+	padding:($bodyLineHeight * 3) 0;
+}
+
+.visually-hidden {
+	@include visually-hidden();
+}
+
+.square {
+	@include squared();
+}
+

@@ -10,7 +10,11 @@
 
 	$bodyBG:$beige;
 	$bodyTextColor:$dark;
-	$borderColor:lighten($dark,20%);
+	$borderColor:lighten($dark,10%);
+
+	$linkColor:$orange;
+	$linkColorHover:lighten($orange,15%);
+
 	$navLinkColor:$dark;
 
 // Fonts
@@ -72,11 +76,7 @@
 	$headlineFontStyle:        initial ;
 	$headlineFontColor:        $bodyTextColor ;
 	$headlineLetterSpacing:    0 ;
-	@for $i from 1 through 6 {
-	  	h#{$i}, .h#{$i} {
-	    	font-size: modular-scale((6 - $i), $bodyFontSize, 1.2);
-	  	}
-	}
+	
 
 
 // Button / Icons Settings
