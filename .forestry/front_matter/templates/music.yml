@@ -1,6 +1,4 @@
 ---
-pages:
-- _projects/geo-mountain.html
 hide_body: false
 fields:
 - type: text
