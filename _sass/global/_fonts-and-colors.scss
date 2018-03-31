@@ -1,0 +1,125 @@
+// body
+// ----
+	body {
+	    background:$bodyBG !important;
+	    font-family:$bodyFont;
+	    color:$bodyTextColor;
+	    line-height:$bodyLineHeight;
+	    font-size:$bodyFontSize;
+	}
+
+// headers
+// -------
+	h1, h2, h3, h4, h5, h6, 
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		margin: ($bodyLineHeight / 4) 0 ($bodyLineHeight / 2);
+		font-weight: $headlineFontWeight;
+		// font-family: $headlineFontFamily;
+		line-height: 1.1em;
+		color: $headlineFontColor;
+		letter-spacing: $headlineLetterSpacing;
+		text-rendering: optimizelegibility; // Fix the character spacing for headings
+		display:block;
+		a {
+			color: $headlineFontColor;
+		}
+
+		&.secondary {
+			// color:$headlineSecFontColor;
+		}
+		&.body-font {
+			// font-family: $baseFontFamily !important;
+		}
+	}
+
+// Borders
+// -------
+	.border {
+		border:1px solid $borderColor;
+	}
+	.border-top {
+		border-top:1px solid $borderColor;
+	}
+	.border-bottom {
+		border-bottom:1px solid $borderColor;
+	}
+	.border-left {
+		border-left:1px solid $borderColor;
+	}
+	.border-right {
+		border-right:1px solid $borderColor;
+	}
+
+
+// Buttons Default
+// ---------------
+	.btn {
+		display:inline-block;
+		font-size: $btnFontSize;
+		// font-family: $btnFontFamily !important;
+		font-weight: $btnFontWeight !important;
+		text-transform: $btnFontStyle !important;
+		color: $btnTextColor !important;
+		background-color:$btnBgColor !important;    
+		border:1px solid $btnBorderColor !important;
+		padding: 8px 30px;
+		line-height: $bodyLineHeight !important;
+		cursor:pointer;
+		transition:all 150ms linear;
+		text-decoration:none;
+		&:hover {
+			border:1px solid $btnBorderHoverColor !important;
+			background-color:$btnBgHoverColor !important;
+			text-decoration: none;
+			color: $btnTextHoverColor !important;
+
+		}
+		// // Secondary
+		// // ---------
+		// &.secondary {
+		// 	color: $sec_btnTextColor !important;
+		// 	{% if settings.sec_btn_bg_color != blank %}
+		// 		background-color:$sec_btnBgColor !important;    
+		// 	{% endif %}
+		// 	border:1px solid $sec_btnBorderColor !important;
+		// 	&:hover {
+		// 		border:1px solid $sec_btnBorderHoverColor !important;
+		// 		{% if settings.sec_btn_bg_hover_color != blank %}
+		// 			background-color:$sec_btnBgHoverColor !important;
+		// 		{% endif %}
+		// 		color: $sec_btnTextHoverColor !important;
+
+		// 	}
+		// }
+
+		// // Tertiary
+		// // ---------
+		// &.tertiary {
+		// 	color: $tert_btnTextColor !important;
+		// 	{% if settings.tert_btn_bg_color != blank %}
+		// 		background-color:$tert_btnBgColor !important;    
+		// 	{% endif %}
+		// 	border:1px solid $tert_btnBorderColor !important;
+		// 	&:hover {
+		// 		border:1px solid $tert_btnBorderHoverColor !important;
+		// 		{% if settings.tert_btn_bg_hover_color != blank %}
+		// 			background-color:$tert_btnBgHoverColor !important;
+		// 		{% endif %}
+		// 		color: $tert_btnTextHoverColor !important;
+
+		// 	}
+		// }
+
+
+
+		&.right {
+			float:right;
+		}
+		&.full {
+			width:100%;
+		}
+
+		&.newsletter-btn {
+			// background-color:white !important;
+		}
+	} 

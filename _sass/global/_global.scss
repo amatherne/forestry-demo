@@ -1,0 +1,16 @@
+
+
+.max-width {
+	width:100%;
+	max-width:$width-site;
+	margin:0 auto;
+}
+.container {
+	width:100%;
+	max-width:$width-cont;
+	margin:0 auto;
+}
+
+.center-content {
+	@include centered();
+}
