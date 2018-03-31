@@ -4,11 +4,6 @@ fields:
 - type: text
   name: title
   label: Title
-- name: sub_heading
-  label: Sub Heading
-  type: text
-  hidden: false
-  default: ''
 - name: banner_image
   label: Banner Image
   type: file
@@ -25,3 +20,16 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: field_group_list
+  name: gallery
+  label: Gallery
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    label: Caption
+    name: caption
+- type: list
+  name: tech
+  label: Tech
