@@ -17,6 +17,8 @@ sub_heading: Web Developer / Musician
 textline: ''
 hero_button:
   text: Contact Me
-  href: "/contact-me"
+  link: contact.md
 show_news: false
+featured_post: _musics/apocalypse-the-apocalypse-day-1.html
+description: Blah Blah Blah
 ---
