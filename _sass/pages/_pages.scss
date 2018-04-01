@@ -4,7 +4,16 @@
 .template--page {
 	.mainContent {
 		margin-top:($bodyLineHeight * 4);
-		// padding:0;
+	}
+	.site-header {
+		ul {
+
+			li {
+				a {
+					color:$dark;
+				}
+			}
+		}
 	}
 	.page-banner {
 		padding:($bodyLineHeight * 8) $bodyLineHeight;

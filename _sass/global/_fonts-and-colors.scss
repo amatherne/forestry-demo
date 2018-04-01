@@ -6,6 +6,11 @@
 	    color:$bodyTextColor;
 	    line-height:$bodyLineHeight;
 	    font-size:$bodyFontSize;
+
+	    &.locked {
+	    	overflow:hidden !important;
+	    	height:100vh;
+	    }
 	}
 
 // headers
@@ -107,9 +112,10 @@
 			}
 			blockquote {
 		    	border-left:3px solid $borderColor;
-		    	padding:1em;
+		    	padding:($bodyLineHeight * 2);
 		    	background:$orange;
 		    	color:$dark;
+		    	margin:($bodyLineHeight * 2) 0;
 			}
 		}
 
