@@ -408,6 +408,8 @@ a {
   vertical-align: top; }
   .grid__item[class*='--push'] {
     position: relative; }
+  .grid__item.vert-middle {
+    vertical-align: middle; }
 
 .grid_no_gutter {
   list-style: none;
@@ -2130,6 +2132,8 @@ a {
   margin: 0 auto; }
   .container.padding {
     padding: 0 1.5em; }
+  .container.thin {
+    max-width: 1200px; }
 
 .center-content {
   position: absolute;
@@ -2458,6 +2462,69 @@ a {
   box-shadow: inset 0px 20px 15px -13px rgba(51, 55, 69, 0.7), inset 0px -15px 10px -10px rgba(51, 55, 69, 0.7);
   margin-bottom: 3em; }
 
+.featured-post {
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f8dd;
+  padding: 3em 0 6em;
+  z-index: 1; }
+  .featured-post h2 {
+    color: #008988;
+    text-align: center;
+    margin-top: 0;
+    letter-spacing: -0.05em;
+    font-weight: 900; }
+  .featured-post .container {
+    padding: 0 1.5em;
+    max-width: 800px;
+    z-index: 1; }
+  .featured-post .post-title {
+    letter-spacing: -0.05em;
+    line-height: 0.9em;
+    font-weight: 900;
+    margin: 0;
+    font-size: 2em;
+    padding: 0 0 0 1.5em;
+    color: #d96459; }
+  .featured-post .entry-date,
+  .featured-post .tags {
+    color: #008988; }
+  .featured-post .entry-date,
+  .featured-post .tags {
+    display: block;
+    margin: 0 0;
+    font-size: 1.25em; }
+  .featured-post .vert-middle {
+    margin-bottom: 3em; }
+  .featured-post .background-image {
+    border: 2vw solid #d96459;
+    padding-top: calc(100% - 3.95vw) !important;
+    z-index: 2; }
+  .featured-post .btn {
+    margin-top: 1.5em; }
+  .featured-post:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 120vh 130vh;
+    border-color: transparent transparent #d96459 transparent;
+    opacity: 0;
+    transition: all 0.3s ease; }
+  @media screen and (min-width: 767px) {
+    .featured-post:after {
+      opacity: 1;
+      border-width: 0 0 120vh 95vh; } }
+  @media screen and (min-width: 992px) {
+    .featured-post:after {
+      opacity: 1;
+      border-width: 0 0 120vh 120vh; } }
+
 .project-post {
   padding: 1.5em; }
   .project-post .tag {
@@ -2514,9 +2581,10 @@ a {
 .template--page .mainContent {
   margin-top: 6em; }
 .template--page .page-banner {
-  padding: 9em 1.5em;
+  padding: 12em 1.5em;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 3em; }
   .template--page .page-banner:before {
     content: '';
     position: absolute;
@@ -2556,6 +2624,22 @@ a {
   font-size: 1.2em; }
 .template--page .tech span {
   font-weight: 600; }
+.template--page .related-posts .related-post {
+  display: block;
+  padding: 1.125em 0.75em;
+  text-decoration: none;
+  margin: 0.75em 0;
+  opacity: 0.7;
+  transition: all .1s linear; }
+  .template--page .related-posts .related-post .related-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    color: #f8f8dd; }
+  .template--page .related-posts .related-post .related-date {
+    color: #f8f8dd; }
+  .template--page .related-posts .related-post:hover {
+    opacity: 1; }
 .template--page .gallery {
   padding: 0 3em 3em; }
   .template--page .gallery .box {
@@ -2567,8 +2651,21 @@ a {
     padding: 1.2em 0.75em; }
 .template--page.color-orange-bg {
   background: #f2ae72; }
+  .template--page.color-orange-bg .border,
+  .template--page.color-orange-bg .border-bottom,
+  .template--page.color-orange-bg .border-top,
+  .template--page.color-orange-bg .border-left,
+  .template--page.color-orange-bg .border-right {
+    border-color: #333745; }
   .template--page.color-orange-bg .site-header ul li a {
     color: #333745; }
+  .template--page.color-orange-bg .related-posts .related-post {
+    background-color: #f2ae72; }
+    .template--page.color-orange-bg .related-posts .related-post .related-title,
+    .template--page.color-orange-bg .related-posts .related-post .related-date {
+      color: #333745; }
+    .template--page.color-orange-bg .related-posts .related-post:hover {
+      background-color: #f8d6b8; }
   .template--page.color-orange-bg .rte {
     color: #333745; }
     .template--page.color-orange-bg .rte p {
@@ -2597,8 +2694,23 @@ a {
       color: #f8f8dd; }
 .template--page.color-white-bg {
   background: #f8f8dd; }
+  .template--page.color-white-bg .border,
+  .template--page.color-white-bg .border-bottom,
+  .template--page.color-white-bg .border-top,
+  .template--page.color-white-bg .border-left,
+  .template--page.color-white-bg .border-right {
+    border-color: #333745; }
+  .template--page.color-white-bg .meta-title {
+    color: #333745; }
   .template--page.color-white-bg .site-header ul li a {
     color: #333745; }
+  .template--page.color-white-bg .related-posts .related-post {
+    background-color: #f8f8dd; }
+    .template--page.color-white-bg .related-posts .related-post .related-title,
+    .template--page.color-white-bg .related-posts .related-post .related-date {
+      color: #333745; }
+    .template--page.color-white-bg .related-posts .related-post:hover {
+      background-color: white; }
   .template--page.color-white-bg .rte {
     color: #333745; }
     .template--page.color-white-bg .rte p {
@@ -2627,8 +2739,23 @@ a {
       color: #f8f8dd; }
 .template--page.color-red-bg {
   background: #d96459; }
+  .template--page.color-red-bg .border,
+  .template--page.color-red-bg .border-bottom,
+  .template--page.color-red-bg .border-top,
+  .template--page.color-red-bg .border-left,
+  .template--page.color-red-bg .border-right {
+    border-color: #f8f8dd; }
+  .template--page.color-red-bg .meta-title {
+    color: #f8f8dd; }
   .template--page.color-red-bg .site-header ul li a {
     color: #f8f8dd; }
+  .template--page.color-red-bg .related-posts .related-post {
+    background-color: #d96459; }
+    .template--page.color-red-bg .related-posts .related-post .related-title,
+    .template--page.color-red-bg .related-posts .related-post .related-date {
+      color: #f8f8dd; }
+    .template--page.color-red-bg .related-posts .related-post:hover {
+      background-color: #e79e97; }
   .template--page.color-red-bg .rte {
     color: #f8f8dd; }
     .template--page.color-red-bg .rte p {
@@ -2657,24 +2784,39 @@ a {
       color: #d96459; }
 .template--page.color-green-bg {
   background: #008988; }
+  .template--page.color-green-bg .border,
+  .template--page.color-green-bg .border-bottom,
+  .template--page.color-green-bg .border-top,
+  .template--page.color-green-bg .border-left,
+  .template--page.color-green-bg .border-right {
+    border-color: #333745; }
+  .template--page.color-green-bg .meta-title {
+    color: #333745; }
   .template--page.color-green-bg .site-header ul li a {
-    color: #f8f8dd; }
+    color: #333745; }
+  .template--page.color-green-bg .related-posts .related-post {
+    background-color: #008988; }
+    .template--page.color-green-bg .related-posts .related-post .related-title,
+    .template--page.color-green-bg .related-posts .related-post .related-date {
+      color: #333745; }
+    .template--page.color-green-bg .related-posts .related-post:hover {
+      background-color: #00d6d4; }
   .template--page.color-green-bg .rte {
-    color: #f8f8dd; }
+    color: #333745; }
     .template--page.color-green-bg .rte p {
-      color: #f8f8dd; }
+      color: #333745; }
     .template--page.color-green-bg .rte h1, .template--page.color-green-bg .rte .h1 {
-      color: #f8f8dd; }
+      color: #333745; }
     .template--page.color-green-bg .rte h2, .template--page.color-green-bg .rte .h2 {
-      color: #f8f8dd; }
+      color: #333745; }
     .template--page.color-green-bg .rte h3, .template--page.color-green-bg .rte .h3 {
-      color: #f8f8dd; }
+      color: #333745; }
     .template--page.color-green-bg .rte h4, .template--page.color-green-bg .rte .h4 {
-      color: #f8f8dd; }
+      color: #333745; }
     .template--page.color-green-bg .rte h5, .template--page.color-green-bg .rte .h5 {
-      color: #f8f8dd; }
+      color: #333745; }
     .template--page.color-green-bg .rte h6, .template--page.color-green-bg .rte .h6 {
-      color: #f8f8dd; }
+      color: #333745; }
     .template--page.color-green-bg .rte a {
       color: #f2ae72;
       text-decoration: none; }
@@ -2683,8 +2825,8 @@ a {
         text-decoration: underline; }
     .template--page.color-green-bg .rte blockquote {
       border-left: 3px solid #494e62;
-      background: #f8f8dd;
-      color: #d96459; }
+      background: #333745;
+      color: #f8f8dd; }
 
 .template--projects {
   background-color: #f2ae72; }
