@@ -15,6 +15,10 @@
   <link rel="icon" type="image/png" href="/forestry-demo/img/favicon.png"/>
 
   <link rel="stylesheet" href="/forestry-demo/css/main.css">
+
+	<script src="/forestry-demo/js/main.js" type="text/javascript"></script>
+	<script src="/forestry-demo/js/vendor/lightbox.js" type="text/javascript"></script>
+
 </head>
 	<body class="template--page color-white-bg" id="vetter kids">
 		<div class="max-width">
@@ -120,12 +124,53 @@
 		</div>
 	</div>
 	<div class="grid">
-		<div class="grid__item one-whole large-up--one-half large-up--push-one-quarter">
-			<div class="rte">
+		<div class="grid__item large-down--hide large-up--one-quarter">
 
-				
+		</div>
+		<div class="grid__item one-whole large-up--one-half">
+			
+			<div class="rte">
 	            <h2>Customer Bio</h2><p>Vetter Kids are a grunge/punk band based out of Austin, Tx. They play with passion and love interactions with their fans; whether onstage, online, or in real life. They’ve been on tours all over the Midwest and Eastcoast supporting thier 2 releases, “III” and “Logan”. Often opening for national acts like Ranier Maria, The Dillinger Escape Plan, and Reggie Watts.</p><h2>Goals</h2><p>To give the band an outlet to reach their fans in a more personal way than a Facebook or Twitter Post. As well as an easier way for fans to find their upcoming shows in a centralized place the band can control.</p><h2>Design Aspects</h2><p>As a personal test of not only myself, but of new technology, almost all design work for the Vetter Kids site was done on my iphone using the Adobe Comp CC app (Illustrator to clean up). There were many limitations of course(gradients for instance), but it was fun to be able to immediately try out a new design idea anywhere…like in line at HEB.</p><p>The band can create posts in a variety of categories: shows, featured, (1 of 4) band member, and tours. Each post can have a title, date, author, category, or header image. The categories are selected by the paths/tags that are designated in the front matter of each post. This will allow the band to designate Feature posts separately from the posts on the Tour pages, and even individual band member posts. They also have the ability to put shows in a self populating Upcoming shows with whatever information they could want.</p>
 	        </div>
+		</div>
+		<div class="grid__item one-whole large-up--one-quarter">
+			
+				<div class="gallery">
+					<h5 class="meta-title border-bottom">Gallery</h5>
+
+					
+						<div  class="box border-bottom" id="trigger-1">
+							<a title="Test Caption 1" href="/forestry-demo/uploads/2018/03/31/sea-1804591_1920.jpg" class="background-image square" style="background-image: url(/forestry-demo/uploads/2018/03/31/sea-1804591_1920.jpg);">
+								
+							</a>
+							<span class="caption">Test Caption 1</span>
+						</div>
+					
+						<div  class="box " id="trigger-2">
+							<a title="Testing Caption 2" href="/forestry-demo/uploads/2018/02/17/city.jpg" class="background-image square" style="background-image: url(/forestry-demo/uploads/2018/02/17/city.jpg);">
+								
+							</a>
+							<span class="caption">Testing Caption 2</span>
+						</div>
+					
+				</div>
+
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$('.gallery .box .square').simpleLightbox();
+						// $.SimpleLightbox.open({
+						//     items: [
+						//     	// 'demo/images/1big.jpg', 'demo/images/2big.jpg', 'demo/images/3big.jpg'
+						//     	
+						//     		'/forestry-demo/uploads/2018/03/31/sea-1804591_1920.jpg',
+						//     	
+						//     		'/forestry-demo/uploads/2018/02/17/city.jpg'
+						//     	
+						//     	]
+						// });
+					})
+				</script>
+			
 		</div>
 	</div>
 </div>
@@ -136,7 +181,6 @@
 
 		</div>
 		<!-- Javascript -->
-		<script src="/forestry-demo/js/main.js" type="text/javascript"></script>
 		<script src="https://use.typekit.net/akz3yrt.js"></script>
   		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</body>
