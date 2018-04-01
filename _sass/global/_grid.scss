@@ -27,6 +27,10 @@
 	&[class*='--push'] {
 		position: relative;
 	}
+
+	&.vert-middle {
+		vertical-align:middle;
+	}
 }
 
 .grid_no_gutter {

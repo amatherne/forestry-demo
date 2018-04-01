@@ -2,27 +2,25 @@
 layout: default
 ---
 <!-- layouts/page -->
-<div class="container padding">
-	{% comment %}{% include breadcrumbs.html class="content-narrow" %}{% endcomment %}
-
-	<div class="background-image page-banner" style="background-image: url({{ page.banner_image | absolute_url }});">
-		<div class="grid">
-			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right">
-				<h1>{{ page.title }}</h1>
-			</div>
-			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
-				<span class="tags">
-					{% for t in page.tags %}
-						<span>{{ t }}</span>{% unless forloop.last %}-{% endunless %}
-					{% endfor %}
-				</span>
-				<span class="entry-date">{{ page.date | date: "%b %d, %Y" }}</span>
-			</div>
+<div class="background-image page-banner" style="background-image: url({{ page.banner_image | absolute_url }});">
+	<div class="grid">
+		<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right">
+			<h1>{{ page.title }}</h1>
+		</div>
+		<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
+			<span class="tags">
+				{% for t in page.tags %}
+					<span>{{ t }}</span>{% unless forloop.last %}-{% endunless %}
+				{% endfor %}
+			</span>
+			<span class="entry-date">{{ page.date | date: "%b %d, %Y" }}</span>
 		</div>
 	</div>
+</div>
+<div class="container thin padding">
 	<div class="grid">
 		<div class="grid__item large-down--hide large-up--one-quarter">
-
+			{% include side-feed.html %}
 		</div>
 		<div class="grid__item one-whole large-up--one-half">
 			{% if page.tech.size > 0 %}
@@ -43,28 +41,17 @@ layout: default
 			{% if page.gallery.size > 0 %}
 				<div class="gallery">
 					<h5 class="meta-title border-bottom">Gallery</h5>
-
 					{% for img in page.gallery %}
 						<div  class="box {% unless forloop.last %}border-bottom{% endunless %}" id="trigger-{{ forloop.index }}">
 							<a title="{{ img.caption }}" href="{{ img.image | absolute_url }}" class="background-image square" style="background-image: url({{ img.image | absolute_url }});">
-								{% comment %}<img class="visually-hidden" src="{{ img.image | absolute_url }}">{% endcomment %}
 							</a>
 							<span class="caption">{{ img.caption }}</span>
 						</div>
 					{% endfor %}
 				</div>
-
 				<script type="text/javascript">
 					$(document).ready(function () {
 						$('.gallery .box .square').simpleLightbox();
-						// $.SimpleLightbox.open({
-						//     items: [
-						//     	// 'demo/images/1big.jpg', 'demo/images/2big.jpg', 'demo/images/3big.jpg'
-						//     	{% for img in page.gallery %}
-						//     		'{{ img.image | absolute_url }}'{% unless forloop.last %},{% endunless %}
-						//     	{% endfor %}
-						//     	]
-						// });
 					})
 				</script>
 			{% endif %}

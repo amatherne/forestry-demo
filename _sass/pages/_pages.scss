@@ -6,11 +6,11 @@
 		margin-top:($bodyLineHeight * 4);
 		// padding:0;
 	}
-
 	.page-banner {
-		padding:($bodyLineHeight * 6) $bodyLineHeight;
+		padding:($bodyLineHeight * 8) $bodyLineHeight;
 		position:relative;
 		z-index:1;
+		margin-bottom:($bodyLineHeight * 2);
 		&:before {
 			content:'';
 			position:absolute;
@@ -24,7 +24,6 @@
 			background-color:$dark;
 			mix-blend-mode:hard-light;
 		}
-
 		h1 {
 		    letter-spacing: -0.05em;
 			line-height: 0.9em;
@@ -48,6 +47,7 @@
 			vertical-align:middle;
 		}
 	}
+
 	.meta-title {
 		padding:($bodyLineHeight * 0.15);
 		margin:($bodyLineHeight * 0.3) 0;
@@ -57,9 +57,31 @@
 		font-size:1.2em;
 	}
 	.tech {
-		
 		span {
 			font-weight:600;
+		}
+	}
+
+	.related-posts {
+		.related-post {
+			display:block;
+			padding:($bodyLineHeight * 0.75) ($bodyLineHeight * 0.5);
+			text-decoration:none;
+			margin:($bodyLineHeight * 0.5) 0;
+			opacity:0.7;
+			transition: all .1s linear;
+			.related-title {
+				font-weight:900;
+				text-transform:uppercase;
+				margin:0;
+				color:$beige;
+			}
+			.related-date {
+				color:$beige;
+			}
+			&:hover {
+				opacity:1;
+			}
 		}
 	}
 
@@ -73,14 +95,23 @@
 		}
 		.caption {
 			display:block;
-			// margin:$bodyLineHeight 0;
 			padding:($bodyLineHeight * 0.8) ($bodyLineHeight / 2);
 		}
 	}
 
+
+
 	// Orange
 	&.color-orange-bg {
 		background:$orange;
+
+		.border, 
+		.border-bottom, 
+		.border-top, 
+		.border-left,
+		.border-right {
+			border-color:$dark;
+		}
 		.site-header {
 			ul {
 
@@ -88,6 +119,18 @@
 					a {
 						color:$dark;
 					}
+				}
+			}
+		}
+		.related-posts {
+			.related-post {
+				background-color:$orange;
+				.related-title,
+				.related-date {
+					color:$dark;
+				}
+				&:hover {
+					background-color:lighten($orange,15%);
 				}
 			}
 		}
@@ -120,6 +163,16 @@
 	// white
 	&.color-white-bg {
 		background:$beige;
+		.border, 
+		.border-bottom, 
+		.border-top, 
+		.border-left,
+		.border-right {
+			border-color:$dark;
+		}
+		.meta-title {
+			color:$dark;
+		}
 		.site-header {
 			ul {
 
@@ -127,6 +180,18 @@
 					a {
 						color:$dark;
 					}
+				}
+			}
+		}
+		.related-posts {
+			.related-post {
+				background-color:$beige;
+				.related-title,
+				.related-date {
+					color:$dark;
+				}
+				&:hover {
+					background-color:lighten($beige,15%);
 				}
 			}
 		}
@@ -158,6 +223,16 @@
 	// Orange
 	&.color-red-bg {
 		background:$red;
+		.border, 
+		.border-bottom, 
+		.border-top, 
+		.border-left,
+		.border-right {
+			border-color:$beige;
+		}
+		.meta-title {
+			color:$beige;
+		}
 		.site-header {
 			ul {
 
@@ -165,6 +240,18 @@
 					a {
 						color:$beige;
 					}
+				}
+			}
+		}
+		.related-posts {
+			.related-post {
+				background-color:$red;
+				.related-title,
+				.related-date {
+					color:$beige;
+				}
+				&:hover {
+					background-color:lighten($red,15%);
 				}
 			}
 		}
@@ -197,24 +284,46 @@
 	// white
 	&.color-green-bg {
 		background:$green;
+		.border, 
+		.border-bottom, 
+		.border-top, 
+		.border-left,
+		.border-right {
+			border-color:$dark;
+		}
+		.meta-title {
+			color:$dark;
+		}
 		.site-header {
 			ul {
 
 				li {
 					a {
-						color:$beige;
+						color:$dark;
 					}
 				}
 			}
 		}
+		.related-posts {
+			.related-post {
+				background-color:$green;
+				.related-title,
+				.related-date {
+					color:$dark;
+				}
+				&:hover {
+					background-color:lighten($green,15%);
+				}
+			}
+		}
 		.rte {
-			color:$beige;
+			color:$dark;
 			p {
-				color:$beige;
+				color:$dark;
 			}
 			@for $i from 1 through 6 {
 			  	h#{$i}, .h#{$i} {
-			    	color:$beige;
+			    	color:$dark;
 			  	}
 			}
 			a {
@@ -227,8 +336,8 @@
 			}
 			blockquote {
 		    	border-left:3px solid $borderColor;
-		    	background:$beige;
-		    	color:$red;
+		    	background:$dark;
+		    	color:$beige;
 			}
 		}
 	}
