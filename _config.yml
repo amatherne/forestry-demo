@@ -15,13 +15,15 @@ defaults:
       layout: post
 collections:
   people:
-    output: true
+    output: false
     permalink: "/about/:path/"
   posts:
-    output: true
+    output: false
   projects:
     output: true
   blogs:
+    output: true
+  musics:
     output: true
 # tag_page_layout: tag_page
 # tag_page_dir: tag

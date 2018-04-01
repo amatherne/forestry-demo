@@ -2,9 +2,27 @@
 	background-color:$orange;
 	.mainContent {
 		margin-top:($bodyLineHeight * 2.5);
-		// padding:0;
 	}
-	
+	.site-header {
+		ul {
+
+			li {
+				a {
+					color:$dark;
+				}
+			}
+		}
+	}
+	.page-title {
+		color:$dark;
+	}
+}
+
+.template--musics {
+	background-color:$green;
+	.mainContent {
+		margin-top:($bodyLineHeight * 2.5);
+	}
 	.site-header {
 		ul {
 
@@ -15,7 +33,82 @@
 			}
 		}
 	}
+	.project-post {
+		.background-image {
+			border: 1vw solid $beige;
+		}
+		.tag, 
+		.h3,
+		.date {
+			color:$beige;
+		}
+		.underline {
+			background-color:$beige;
+		}
+		a {
+			text-decoration:none;
+			&:hover {
+				.background-image {
+					border: 1vw solid darken($beige,10%);
+				}
+				.underline {
+					background-color: darken($beige,10%);
+				}
+				.tag, 
+				.h3,
+				.date {
+					color: darken($beige,10%);
+
+				}
+			}
+		}
+	}
 }
 
+.template--blogs {
+	background-color:$beige;
+	.mainContent {
+		margin-top:($bodyLineHeight * 2.5);
+	}
+	.site-header {
+		ul {
 
+			li {
+				a {
+					color:$dark;
+				}
+			}
+		}
+	}
+	.project-post {
+		.background-image {
+			border: 1vw solid $dark;
+		}
+		.tag, 
+		.h3,
+		.date {
+			color:$dark;
+		}
+		.underline {
+			background-color:$dark;
+		}
+		a {
+			text-decoration:none;
+			&:hover {
+				.background-image {
+					border: 1vw solid lighten($dark,10%);
+				}
+				.underline {
+					background-color: lighten($dark,10%);
+				}
+				.tag, 
+				.h3,
+				.date {
+					color: lighten($dark,10%);
+
+				}
+			}
+		}
+	}
+}
 

@@ -6,11 +6,9 @@ layout: default
 	<h2 class="h1 page-title">{{ page.layout | capitalize }} / Posts</h2>	
 	<div class="grid">
 		{% for p in site.blogs %}
-			{% if p.sub_category == 'Blog' %}
-				<div class="grid__item small--one-half medium-up--one-quarter">
-					{% include project-post.html %}
-				</div>
-			{% endif %}
+			<div class="grid__item small--one-half medium-up--one-quarter">
+				{% include project-post.html %}
+			</div>
 		{% endfor %}
 	</div>
 </div>

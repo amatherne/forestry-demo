@@ -1,16 +1,34 @@
 ---
 layout: default
 ---
-{% comment %}
-    A general page layout. Used by default for all content on the site.
-{% endcomment %}
+<!-- layouts/page -->
+<div class="container padding">
+	{% comment %}{% include breadcrumbs.html class="content-narrow" %}{% endcomment %}
 
-{% include breadcrumbs.html class="content-narrow" %}
+	<div class="background-image page-banner" style="background-image: url({{ page.banner_image | absolute_url }});">
+		<div class="grid">
+			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right">
+				<h1>{{ page.title }}</h1>
+			</div>
+			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
+				<span class="tags">
+					{% for t in page.tags %}
+						<span>{{ t }}</span>{% unless forloop.last %}-{% endunless %}
+					{% endfor %}
+				</span>
+				<span class="entry-date">{{ page.date | date: "%b %d, %Y" }}</span>
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="grid__item one-whole large-up--one-half large-up--push-one-quarter">
+			<div class="rte">
 
-<div class="container pure-g">
-    <div class="pure-u-1">
-        <div class="content content-narrow">
-            {{ content }}
-        </div>
-    </div>
+				{% if tech %}
+
+				{% endif %}
+	            {{ content }}
+	        </div>
+		</div>
+	</div>
 </div>

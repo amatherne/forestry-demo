@@ -11,14 +11,15 @@ fields:
   hidden: false
   default: ''
 - type: select
-  name: sub_category
+  name: color
   config:
     source:
       type: simple
     options:
-    - Blog
-    - Portfolio
-    - Music
+    - White Bg
+    - Red Bg
+    - Green Bg
+    - Orange Bg
   label: Sub Category
 - name: tags
   label: Tags

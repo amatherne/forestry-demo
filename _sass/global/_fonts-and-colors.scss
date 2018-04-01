@@ -83,12 +83,19 @@
 	// RTE text
 	// --------
 		.rte {
+
 			margin:1em auto;
 			max-width:800px;
 			@for $i from 1 through 6 {
 			  	h#{$i}, .h#{$i} {
-			    	font-size: modular-scale((6 - $i), $bodyFontSize, 1.2);
+			    	font-size: modular-scale((6 - $i), $bodyFontSize, 1.4);
+			    	font-weight:900;
+			    	letter-spacing:-0.05em;
+			    	margin-bottom:($bodyLineHeight * 0.1);
 			  	}
+			}
+			p {
+				font-size:($bodyFontSize * 1.05);
 			}
 			a {
 				color: $linkColor;
