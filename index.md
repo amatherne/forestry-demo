@@ -1,8 +1,8 @@
 ---
 title: Home
-banner_image: "/uploads/2018/03/31/sea-1804591_1920.jpg"
+banner_image: "/uploads/2018/04/01/snaps.JPG"
 layout: landing-page
-heading: Web Development
+heading: Austin Matherne
 partners: []
 services:
 - description: Performing collaborative research and providing services to support
@@ -13,7 +13,7 @@ services:
     the biotechnology sector.
   heading: BioTech
   icon: "/uploads/2017/11/13/biotech.png"
-sub_heading: Simple and Straightforward
+sub_heading: Web Developer | Musician
 textline: ''
 hero_button:
   text: Learn more
