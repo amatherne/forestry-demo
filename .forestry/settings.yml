@@ -7,13 +7,13 @@ auto_deploy: true
 admin_path: "/admin"
 webhook_url: 
 collections:
+  _musics:
+    default_front_matter_template: music
+  _blogs:
+    default_front_matter_template: blog
   _posts:
     default_front_matter_template: post
   _people:
     default_front_matter_template: person
   _projects:
     default_front_matter_template: project
-  _blogs:
-    default_front_matter_template: blog
-  _musics:
-    default_front_matter_template: music
