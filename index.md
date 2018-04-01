@@ -19,6 +19,6 @@ hero_button:
   text: Contact Me
   link: contact.md
 show_news: false
-featured_post: _musics/vetter-kids.html
+featured_post: _blogs/relax.html
 description: Blah Blah Blah
 ---
