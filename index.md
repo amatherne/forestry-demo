@@ -13,10 +13,10 @@ services:
     the biotechnology sector.
   heading: BioTech
   icon: "/uploads/2017/11/13/biotech.png"
-sub_heading: Web Developer | Musician
+sub_heading: Web Developer / Musician
 textline: ''
 hero_button:
-  text: Learn more
-  href: "/services"
+  text: Contact Me
+  href: "/contact-me"
 show_news: false
 ---
