@@ -31,6 +31,7 @@
 			font-weight:900;
 			margin:0;
 			font-size:2.5em;
+			padding:0 0 0 $bodyLineHeight;
 		}
 		h1,
 		.entry-date, 
@@ -47,7 +48,35 @@
 			vertical-align:middle;
 		}
 	}
+	.meta-title {
+		padding:($bodyLineHeight * 0.15);
+		margin:($bodyLineHeight * 0.3) 0;
+		display:inline-block;
+		font-weight:400;
+		letter-spacing: 0.1em;
+		font-size:1.2em;
+	}
+	.tech {
+		
+		span {
+			font-weight:600;
+		}
+	}
 
+	.gallery {
+		padding:0 ($bodyLineHeight * 2) ($bodyLineHeight * 2);
+		.box {
+			margin:0 0 ($bodyLineHeight * 2);
+		}
+		.background-image {
+			border:1px solid $beige;
+		}
+		.caption {
+			display:block;
+			// margin:$bodyLineHeight 0;
+			padding:($bodyLineHeight * 0.8) ($bodyLineHeight / 2);
+		}
+	}
 
 	// Orange
 	&.color-orange-bg {

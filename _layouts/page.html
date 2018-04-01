@@ -21,14 +21,53 @@ layout: default
 		</div>
 	</div>
 	<div class="grid">
-		<div class="grid__item one-whole large-up--one-half large-up--push-one-quarter">
+		<div class="grid__item large-down--hide large-up--one-quarter">
+
+		</div>
+		<div class="grid__item one-whole large-up--one-half">
+			{% if page.tech.size > 0 %}
+				<div class="tech">
+					<h5 class="meta-title border-bottom">Tech Used</h5>
+					<div>
+						{% for i in page.tech %}
+							<span>{{ i }}</span> {% unless forloop.last %}<span> / </span>{% endunless %}
+						{% endfor %}
+					</div>
+				</div>
+			{% endif %}
 			<div class="rte">
-
-				{% if tech %}
-
-				{% endif %}
 	            {{ content }}
 	        </div>
+		</div>
+		<div class="grid__item one-whole large-up--one-quarter">
+			{% if page.gallery.size > 0 %}
+				<div class="gallery">
+					<h5 class="meta-title border-bottom">Gallery</h5>
+
+					{% for img in page.gallery %}
+						<div  class="box {% unless forloop.last %}border-bottom{% endunless %}" id="trigger-{{ forloop.index }}">
+							<a title="{{ img.caption }}" href="{{ img.image | absolute_url }}" class="background-image square" style="background-image: url({{ img.image | absolute_url }});">
+								{% comment %}<img class="visually-hidden" src="{{ img.image | absolute_url }}">{% endcomment %}
+							</a>
+							<span class="caption">{{ img.caption }}</span>
+						</div>
+					{% endfor %}
+				</div>
+
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$('.gallery .box .square').simpleLightbox();
+						// $.SimpleLightbox.open({
+						//     items: [
+						//     	// 'demo/images/1big.jpg', 'demo/images/2big.jpg', 'demo/images/3big.jpg'
+						//     	{% for img in page.gallery %}
+						//     		'{{ img.image | absolute_url }}'{% unless forloop.last %},{% endunless %}
+						//     	{% endfor %}
+						//     	]
+						// });
+					})
+				</script>
+			{% endif %}
 		</div>
 	</div>
 </div>

@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Global
-// ======
+// ------
 
 @import "global/mixins";
 @import "global/variables";
@@ -14,9 +14,12 @@
 @import "global/grid";
 @import "global/global";
 
+// Vendor
+// ------
+@import "vendor/lightbox";
 
 // Modules
-// =======
+// -------
 
 @import "modules/nav"; 
 @import "modules/footer";
@@ -30,7 +33,7 @@
 
 
 // Pages
-// =====
+// -----
 
 @import "pages/landing-page";
 @import "pages/pages";
