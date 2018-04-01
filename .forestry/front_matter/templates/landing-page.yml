@@ -29,47 +29,24 @@ fields:
   - type: text
     name: text
     label: Text
-  - type: text
-    name: href
-    label: Link
+  - type: select
+    name: link
+    config:
+      source:
+        type: pages
+    label: link
 - type: file
   name: banner_image
   label: Hero Image
   description: 'Dimensions: 1200px by 580px'
   config:
     maxSize: '2'
-- name: services
-  label: Services
-  type: field_group_list
-  fields:
-  - name: heading
-    label: Heading
-    type: text
-    hidden: false
-    default: ''
-  - name: description
-    label: Description
-    type: text
-    hidden: false
-    default: ''
-  - name: icon
-    label: Icon
-    type: file
-    hidden: false
-    default: ''
-  hidden: false
-  default: ''
-- type: boolean
-  name: show_news
-  label: Show News?
-  description: Enables a news section with a twitter feed & latest posts
-- type: image_gallery
-  name: partners
-  label: Partner Logos
-- type: boolean
-  name: show_staff
-  label: Show Staff?
-  description: Enables a staff section that lists each person in the People collection
+- type: select
+  name: featured_post
+  config:
+    source:
+      type: pages
+  label: Featured Post
 - name: layout
   label: Layout
   type: text
