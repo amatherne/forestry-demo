@@ -243,6 +243,9 @@ body {
   color: #333745;
   line-height: 1.5em;
   font-size: 1em; }
+  body.locked {
+    overflow: hidden !important;
+    height: 100vh; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -343,9 +346,10 @@ a {
       text-decoration: underline; }
   .rte blockquote {
     border-left: 3px solid #494e62;
-    padding: 1em;
+    padding: 3em;
     background: #f2ae72;
-    color: #333745; }
+    color: #333745;
+    margin: 3em 0; }
 
 .border {
   border: 1px solid #494e62; }
@@ -2414,8 +2418,43 @@ a {
         padding: 0.375em 0.75em;
         text-decoration: none; }
   .site-header .logo img {
-    max-width: 100px;
+    max-width: 80px;
     display: block; }
+  @media screen and (max-width: 766px) {
+    .site-header .nav-toggle {
+      position: absolute;
+      top: 0.75em;
+      right: 0.75em;
+      padding: 1.5em;
+      color: #f8f8dd;
+      line-height: 1; }
+      .site-header .nav-toggle.close {
+        color: #f8f8dd;
+        background-color: #333745;
+        position: fixed; }
+    .site-header .main-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      overflow-y: auto;
+      background-color: #333745;
+      padding-top: 6em;
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all .05s linear; }
+      .site-header .main-nav li {
+        display: block;
+        padding: 1.5em;
+        border-bottom: 1px solid #494e62; }
+        .site-header .main-nav li:first-of-type {
+          border-top: 1px solid #494e62; }
+      .site-header .main-nav.show {
+        opacity: 1;
+        transform: translateX(0%);
+        transition: transform .3s linear, opacity .1s linear; } }
 
 .hero {
   background-position: center;
@@ -2580,6 +2619,8 @@ a {
 
 .template--page .mainContent {
   margin-top: 6em; }
+.template--page .site-header ul li a {
+  color: #333745; }
 .template--page .page-banner {
   padding: 12em 1.5em;
   position: relative;

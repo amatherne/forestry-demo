@@ -29,7 +29,7 @@
 <header class="site-header">
 	<div class="container">
 		<div class="grid">
-			<div class="grid__item small--one-whole medium--one-half large-up--one-fifth small--text-center ">
+			<div class="grid__item small--one-whole medium--one-third large-up--one-fifth small--text-center">
 				<h1 class="logo">
 					<a href="/forestry-demo/">
 						
@@ -40,9 +40,11 @@
 					</a>
 				</h1>
 			</div>
-			<div class="grid__item small--text-center medium-up--text-right small--one-whole medium--one-half large-up--four-fifths">
+			<div class="nav-toggle medium-up--hide">Menu</div>
+			<div class="grid__item small--text-center medium-up--text-right small--one-whole medium--two-thirds large-up--four-fifths">
 				<nav class="main-nav">
-					<ul class="navigation">
+					<div class="nav-toggle close medium-up--hide">Close</div>
+					<ul class="">
 						
 							<li class="">
 								
@@ -105,6 +107,17 @@
 	</div>
 </header>
 
+<script type="text/javascript">
+	$(document).ready(function () {
+		var toggle = $('.nav-toggle');
+			nav = $('.main-nav');
+			body = $('body');
+		toggle.on('click touch', function() {
+			nav.toggleClass('show');
+			body.toggleClass('locked');
+		})
+	})
+</script>
 
 			<div class="mainContent">
 				<div class="container">
