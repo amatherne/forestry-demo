@@ -10,6 +10,16 @@ fields:
   description: Dimensions work best at 1200 pixels by 400 pixels
   hidden: false
   default: ''
+- type: select
+  name: sub_category
+  config:
+    source:
+      type: simple
+    options:
+    - Blog
+    - Portfolio
+    - Music
+  label: Sub Category
 - name: tags
   label: Tags
   type: tag_list

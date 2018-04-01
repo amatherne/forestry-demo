@@ -13,3 +13,5 @@ collections:
     default_front_matter_template: person
   _projects:
     default_front_matter_template: project
+  _blogs:
+    default_front_matter_template: blogs
