@@ -19,6 +19,6 @@ hero_button:
   text: Contact Me
   link: contact.md
 show_news: false
-featured_post: _musics/apocalypse-the-apocalypse-day-1.html
+featured_post: _musics/vetter-kids.html
 description: Blah Blah Blah
 ---
