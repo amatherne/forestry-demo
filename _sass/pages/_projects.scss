@@ -1,7 +1,7 @@
 .template--projects {
 	background-color:$orange;
 	.mainContent {
-		margin-top:($bodyLineHeight * 2.5);
+		padding-top:($bodyLineHeight * 5);
 	}
 	.site-header {
 		ul {
@@ -12,6 +12,12 @@
 				}
 			}
 		}
+		.main-nav.show ul li a {
+			color:$beige
+		}
+		.nav-toggle:not(.close) {
+			color:$dark;
+		}
 	}
 	.page-title {
 		color:$dark;
@@ -21,7 +27,7 @@
 .template--musics {
 	background-color:$green;
 	.mainContent {
-		margin-top:($bodyLineHeight * 2.5);
+		padding-top:($bodyLineHeight * 5);
 	}
 	.site-header {
 		ul {
@@ -31,6 +37,12 @@
 					color:$beige;
 				}
 			}
+		}
+		.main-nav.show ul li a {
+			color:$beige
+		}
+		.nav-toggle:not(.close) {
+			color:$beige;
 		}
 	}
 	.project-post {
@@ -68,7 +80,7 @@
 .template--blogs {
 	background-color:$beige;
 	.mainContent {
-		margin-top:($bodyLineHeight * 2.5);
+		padding-top:($bodyLineHeight * 5);
 	}
 	.site-header {
 		ul {
@@ -78,6 +90,12 @@
 					color:$dark;
 				}
 			}
+		}
+		.main-nav.show ul li a {
+			color:$beige
+		}
+		.nav-toggle:not(.close) {
+			color:$dark;
 		}
 	}
 	.project-post {

@@ -51,6 +51,7 @@
 		}
 		.btn {
 			margin-top:$bodyLineHeight;
+			margin-bottom:$bodyLineHeight;
 		}
 		&:after {
 		    content: '';
@@ -77,6 +78,11 @@
 			&:after {
 			    opacity: 1;
 			    border-width: 0 0 120vh 120vh;
+			}
+		}
+		@media screen and (max-width:$grid-large - 1) {
+			.post-title {
+				padding:0 ;
 			}
 		}
 		// @media screen and (min-width: 1023px) {

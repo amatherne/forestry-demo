@@ -19,7 +19,7 @@ layout: default
 </div>
 <div class="container thin padding">
 	<div class="grid">
-		<div class="grid__item large-down--hide large-up--one-quarter">
+		<div class="grid__item small--hide medium--hide large-up--one-quarter">
 			{% include side-feed.html %}
 		</div>
 		<div class="grid__item one-whole large-up--one-half">
@@ -55,6 +55,9 @@ layout: default
 					})
 				</script>
 			{% endif %}
+		</div>
+		<div class="grid__item one-whole large-up--hide">
+			{% include side-feed.html %}
 		</div>
 	</div>
 </div>

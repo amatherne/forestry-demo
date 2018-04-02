@@ -5,7 +5,8 @@
 		$shadow:rgba(51, 55, 69, 0.4);
 		$shadowHover:rgba(51, 55, 69, 0.6);
 		padding:$bodyLineHeight;
-
+		max-width:450px;
+		margin:0 auto;
 		.tag {
 			font-size:2em;
 			font-weight:300;
@@ -63,6 +64,12 @@
 					text-shadow:1px 1px 2px $shadowHover;
 
 				}
+			}
+		}
+
+		@media screen and (max-width:$grid-large - 1) {
+			.tag {
+				font-size:1.5em;
 			}
 		}
 	}
