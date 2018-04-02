@@ -145,7 +145,7 @@
 
 	<div class="featured-post">
 		<div class="container">
-			<h2 class="section-title">Featured Blogs</h2>	
+			<h2 class="section-title">Featured</h2>	
 			<div class="grid">
 				<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right vert-middle">
 					<h3 class="post-title">Relax</h3>
@@ -169,13 +169,63 @@
 
 
 <!-- includes/featured-projects -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="featured-projects">
 	<div class="container padding">
 		<h2 class="h1 page-title">Recent Posts</h2>	
 		<div class="grid">
 			
-				<div class="grid__item small--one-half medium-up--one-quarter">
-					<!-- includes/project-post -->
+		
+			
+		<div class="grid__item small--one-whole medium--one-half large-up--one-quarter" data-date="20180331221523">
+			<!-- includes/project-post -->
+<div class="project-post">
+	<a href="/forestry-demo/blogs/geo-mountain/">
+		<h4 class="tag">Blog</h4>
+		
+		<div class="background-image square " style="background-image:url(/forestry-demo/uploads/2018/04/01/glitch-effect_v-3.jpg);" >
+		</div>
+		<div class="post-meta">
+			<span class="h3">Geo Mountain</span>
+			<div class="underline"></div>
+			<span class="date">Mar 31, 2018</span>
+		</div>
+	</a>
+</div>
+		</div>
+	
+		<div class="grid__item small--one-whole medium--one-half large-up--one-quarter" data-date="20180401054903">
+			<!-- includes/project-post -->
+<div class="project-post">
+	<a href="/forestry-demo/blogs/svg-fun/">
+		<h4 class="tag">Codepen.io</h4>
+		
+		<div class="background-image square " style="background-image:url(/forestry-demo/img/placeholder.png);" >
+		</div>
+		<div class="post-meta">
+			<span class="h3">SVG Fun</span>
+			<div class="underline"></div>
+			<span class="date">Apr 01, 2018</span>
+		</div>
+	</a>
+</div>
+		</div>
+	
+		<div class="grid__item small--one-whole medium--one-half large-up--one-quarter" data-date="20180331213116">
+			<!-- includes/project-post -->
 <div class="project-post">
 	<a href="/forestry-demo/projects/vetter-kids/">
 		<h4 class="tag">Development</h4>
@@ -189,10 +239,10 @@
 		</div>
 	</a>
 </div>
-				</div>
-			
-				<div class="grid__item small--one-half medium-up--one-quarter">
-					<!-- includes/project-post -->
+		</div>
+	
+		<div class="grid__item small--one-whole medium--one-half large-up--one-quarter" data-date="20180401050604">
+			<!-- includes/project-post -->
 <div class="project-post">
 	<a href="/forestry-demo/projects/austin-pedicab-company/">
 		<h4 class="tag">Development</h4>
@@ -206,11 +256,67 @@
 		</div>
 	</a>
 </div>
-				</div>
-			
+		</div>
+	
+		<div class="grid__item small--one-whole medium--one-half large-up--one-quarter" data-date="20180331213116">
+			<!-- includes/project-post -->
+<div class="project-post">
+	<a href="/forestry-demo/musics/vetter-kids/">
+		<h4 class="tag"></h4>
+		
+		<div class="background-image square " style="background-image:url(/forestry-demo/uploads/2018/03/31/sea-1804591_1920.jpg);" >
+		</div>
+		<div class="post-meta">
+			<span class="h3">Vetter Kids</span>
+			<div class="underline"></div>
+			<span class="date">Mar 31, 2018</span>
+		</div>
+	</a>
+</div>
+		</div>
+	
+		<div class="grid__item small--one-whole medium--one-half large-up--one-quarter" data-date="20180401033806">
+			<!-- includes/project-post -->
+<div class="project-post">
+	<a href="/forestry-demo/musics/apocalypse-the-apocalypse-day-1/">
+		<h4 class="tag">Recording</h4>
+		
+		<div class="background-image square " style="background-image:url(/forestry-demo/uploads/2018/04/01/vetter-kids.jpg);" >
+		</div>
+		<div class="post-meta">
+			<span class="h3">Apocalypse: The Apocalypse... Day 1</span>
+			<div class="underline"></div>
+			<span class="date">Apr 01, 2018</span>
+		</div>
+	</a>
+</div>
+		</div>
+	
+		
 		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var $cont = $('#sort'),
+			$item = $cont.children('.grid__item');
+		$item.sort(function(a,b){
+			var an = b.getAttribute('data-date'),
+				bn = a.getAttribute('data-date');
+			if(an > bn) {
+				return 1;
+			}
+			if(an < bn) {
+				return -1;
+			}
+			return 0;
+		});
+		$item.detach().appendTo($cont);
+	})
+</script>
+
 
 
 

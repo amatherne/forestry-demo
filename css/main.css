@@ -408,7 +408,7 @@ a {
   width: 100%;
   position: relative;
   display: inline-block;
-  margin-right: -0.35%;
+  margin-right: -0.4%;
   vertical-align: top; }
   .grid__item[class*='--push'] {
     position: relative; }
@@ -2128,11 +2128,12 @@ a {
 .max-width {
   width: 100%;
   max-width: 1500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px 5px rgba(51, 55, 69, 0.4); }
 
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto; }
   .container.padding {
     padding: 0 1.5em; }
@@ -2417,9 +2418,11 @@ a {
         text-align: center;
         padding: 0.375em 0.75em;
         text-decoration: none; }
-  .site-header .logo img {
-    max-width: 80px;
-    display: block; }
+  .site-header .logo {
+    margin: 0.1em 0 0; }
+    .site-header .logo img {
+      max-width: 80px;
+      display: block; }
   @media screen and (max-width: 766px) {
     .site-header .nav-toggle {
       position: absolute;
@@ -2462,6 +2465,7 @@ a {
   background-size: cover;
   min-height: 200px;
   height: 100vh;
+  max-height: 900px;
   position: relative;
   z-index: 1; }
   .hero:after {
@@ -2500,6 +2504,8 @@ a {
   padding: 3em 0;
   box-shadow: inset 0px 20px 15px -13px rgba(51, 55, 69, 0.7), inset 0px -15px 10px -10px rgba(51, 55, 69, 0.7);
   margin-bottom: 3em; }
+  .featured-projects .grid__item:nth-of-type(n+5) {
+    display: none; }
 
 .featured-post {
   overflow: hidden;
@@ -2540,7 +2546,8 @@ a {
     padding-top: calc(100% - 3.95vw) !important;
     z-index: 2; }
   .featured-post .btn {
-    margin-top: 1.5em; }
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; }
   .featured-post:after {
     content: '';
     position: absolute;
@@ -2563,9 +2570,14 @@ a {
     .featured-post:after {
       opacity: 1;
       border-width: 0 0 120vh 120vh; } }
+  @media screen and (max-width: 991px) {
+    .featured-post .post-title {
+      padding: 0; } }
 
 .project-post {
-  padding: 1.5em; }
+  padding: 1.5em;
+  max-width: 450px;
+  margin: 0 auto; }
   .project-post .tag {
     font-size: 2em;
     font-weight: 300;
@@ -2610,6 +2622,9 @@ a {
     .project-post a:hover .date {
       color: #f8f8dd;
       text-shadow: 1px 1px 2px rgba(51, 55, 69, 0.6); }
+  @media screen and (max-width: 991px) {
+    .project-post .tag {
+      font-size: 1.5em; } }
 
 .template--landing-page .mainContent {
   margin-top: 0;
@@ -2618,8 +2633,12 @@ a {
   color: #f8f8dd; }
 
 .template--page .mainContent {
-  margin-top: 6em; }
+  padding-top: 7.5em; }
 .template--page .site-header ul li a {
+  color: #333745; }
+.template--page .site-header .main-nav.show ul li a {
+  color: #f8f8dd; }
+.template--page .site-header .nav-toggle:not(.close) {
   color: #333745; }
 .template--page .page-banner {
   padding: 12em 1.5em;
@@ -2682,7 +2701,9 @@ a {
   .template--page .related-posts .related-post:hover {
     opacity: 1; }
 .template--page .gallery {
-  padding: 0 3em 3em; }
+  padding: 0 0 3em;
+  max-width: 350px;
+  margin: 0 auto; }
   .template--page .gallery .box {
     margin: 0 0 3em; }
   .template--page .gallery .background-image {
@@ -2690,6 +2711,9 @@ a {
   .template--page .gallery .caption {
     display: block;
     padding: 1.2em 0.75em; }
+@media screen and (max-width: 991px) {
+  .template--page .page-banner h1 {
+    padding: 0; } }
 .template--page.color-orange-bg {
   background: #f2ae72; }
   .template--page.color-orange-bg .border,
@@ -2872,8 +2896,12 @@ a {
 .template--projects {
   background-color: #f2ae72; }
   .template--projects .mainContent {
-    margin-top: 3.75em; }
+    padding-top: 7.5em; }
   .template--projects .site-header ul li a {
+    color: #333745; }
+  .template--projects .site-header .main-nav.show ul li a {
+    color: #f8f8dd; }
+  .template--projects .site-header .nav-toggle:not(.close) {
     color: #333745; }
   .template--projects .page-title {
     color: #333745; }
@@ -2881,8 +2909,12 @@ a {
 .template--musics {
   background-color: #008988; }
   .template--musics .mainContent {
-    margin-top: 3.75em; }
+    padding-top: 7.5em; }
   .template--musics .site-header ul li a {
+    color: #f8f8dd; }
+  .template--musics .site-header .main-nav.show ul li a {
+    color: #f8f8dd; }
+  .template--musics .site-header .nav-toggle:not(.close) {
     color: #f8f8dd; }
   .template--musics .project-post .background-image {
     border: 1vw solid #f8f8dd; }
@@ -2906,8 +2938,12 @@ a {
 .template--blogs {
   background-color: #f8f8dd; }
   .template--blogs .mainContent {
-    margin-top: 3.75em; }
+    padding-top: 7.5em; }
   .template--blogs .site-header ul li a {
+    color: #333745; }
+  .template--blogs .site-header .main-nav.show ul li a {
+    color: #f8f8dd; }
+  .template--blogs .site-header .nav-toggle:not(.close) {
     color: #333745; }
   .template--blogs .project-post .background-image {
     border: 1vw solid #333745; }
