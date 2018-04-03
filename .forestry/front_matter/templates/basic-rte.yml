@@ -6,16 +6,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: heading
-  label: Heading
-  type: text
-  hidden: false
-  default: ''
-- name: sub_heading
-  label: Sub heading
-  type: text
-  hidden: false
-  default: ''
 - name: banner_image
   label: Banner image
   type: file
@@ -31,13 +21,11 @@ fields:
   type: datetime
   hidden: false
   default: ''
-- name: textline
-  label: Textline
-  type: text
-  hidden: false
-  default: ''
 - name: publish_date
   label: Publish date
   type: datetime
   hidden: false
   default: ''
+- type: boolean
+  name: show_date
+  label: Show Date
