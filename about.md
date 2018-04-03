@@ -1,12 +1,12 @@
 ---
 title: About
-date: 2017-11-01 03:00:00 +0000
+date: 2018-04-03 03:21:11 +0000
 banner_image: "/uploads/2018/04/01/hero.jpg"
 heading: ''
 sub_heading: ''
 layout: page
 textline: ''
-publish_date: 2017-12-01 04:00:00 +0000
+publish_date: 2018-04-03 03:21:36 +0000
 show_staff: false
 menu:
   footer:
@@ -19,6 +19,12 @@ menu:
     weight: 2
     title: About Me
 ---
+<style>
+.entry-date {
+	display:none;
+}
+</style>
+
 My name is Austin Matherne, and I unapologetically sprung from the mid-80's. I grew up in Baton Rouge, Louisiana, but have been a resident of the Austin area for the past decade. The laid back, laissez-faire style of the city reminded me of comforts of home, but embodied more of the cultural progressive attitudes that I value. This is why I want to give back, to give voice and presence to the local community of small business and artists that make Austin thrive.
 
 For the past fifteen years I've been involved in the DIY punk music scene; booking my own tours, and playing shows all over the country. For last five years I've been a member of the local pedicab community, managing shops, overseeing ad campaigns, and coordinating 100+ riders at events, in and out of state. Before making my living on a tricycle, I spent three years at the Music Lab Rehearsal and Recording Studios. There, I built and managed two cafes that served both International and Local acts as they rehearsed.
