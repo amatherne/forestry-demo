@@ -124,15 +124,10 @@
 					<!-- layouts/page -->
 <div class="background-image page-banner" style="background-image: url(/forestry-demo/uploads/2018/04/01/austin-2.jpg);">
 	<div class="grid">
-		<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right">
+		<div class="grid__item one-whole text-center ">
 			<h1>Contact</h1>
 		</div>
-		<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
-			<span class="tags">
-				
-			</span>
-			<span class="entry-date">Nov 01, 2017</span>
-		</div>
+		
 	</div>
 </div>
 <div class="container thin padding">
@@ -147,30 +142,19 @@
 		<div class="grid__item one-whole large-up--one-half">
 			
 			<div class="rte">
-	            <h2 id="hours-of-operation">Hours of Operation</h2>
-<p>Belkirk College of Engineering is available:</p>
+	            <h3 id="lets-get-started">Let’s Get Started</h3>
 
-<ul>
-  <li><strong>Monday-Friday</strong>, 8:00am to 6:00pm EST</li>
-  <li><strong>Saturdays</strong>, 8:00am to 5:00pm EST</li>
-  <li><strong>Sundays</strong>, 9:00am to 12:00pm EST</li>
-</ul>
-
-<h2 id="contact-information">Contact Information</h2>
-
-<p>
-  Austin Matherne | Web Development | Musician<br />
-  <br />
-  <br />
-  <br />
-  
-  Austin, TX, US<br />
-  
-  <br />
-  <a href="tel:(512) 460-0108" title="(512) 460-0108">(512) 460-0108</a><br />
-  <a href="mailto:matherne.projects@gmail.com" title="matherne.projects@gmail.com">matherne.projects@gmail.com</a>
-</p>
-
+<form action="/forestry-demo//mail.php" id="form" method="post" name="form">
+	<fieldset>
+  		<div class="right">
+		    <input class="input-reg" type="text" name="full_name" for="" placeholder="Your Full Name" />
+		    <input class="input-reg" type="text" name="phone" for="" placeholder="Phone Number" />
+		    <input class="input-reg" type="text" name="email" for="" placeholder="Email Address" />
+		    <textarea class="large-box" rows="5" cols="80" name="message" for="" placeholder="Write a short message here!"></textarea>
+  		</div>
+  		<button class="call" type="submit" name="submit" value="submit"><span>Send</span></button>  
+	</fieldset>
+</form>
 
 	        </div>
 		</div>
@@ -190,7 +174,56 @@
 			</div>
 
 			<!-- includes/footer -->
-
+<footer>
+    <div class="container">
+        <nav class="footer-nav">
+            <ul class="">
+                
+                    <li class="">
+                        <a href="/forestry-demo/">
+                            Home
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/forestry-demo/about/">
+                            About Me
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/forestry-demo/projects/">
+                            Portfolio
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/forestry-demo/blog/">
+                            Blog
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/forestry-demo/music">
+                            Music
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/forestry-demo/contact/">
+                            Contact
+                        </a>
+                    </li>
+                
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>
+                &copy; 2018 Austin Matherne | Web Development | Musician - All Rights Reserved<br>
+            </p>
+        </div>
+    </div>
+</footer>
 		</div>
 		<!-- Javascript -->
 		<script src="https://use.typekit.net/akz3yrt.js"></script>
