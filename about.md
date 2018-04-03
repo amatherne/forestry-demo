@@ -8,6 +8,7 @@ layout: page
 textline: ''
 publish_date: 2018-04-03 03:21:36 +0000
 show_staff: false
+show_date: false
 menu:
   footer:
     identifier: _about
