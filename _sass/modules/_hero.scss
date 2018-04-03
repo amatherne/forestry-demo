@@ -31,7 +31,7 @@
 			max-width:600px;
 			text-align:center;
 			z-index:2;
-
+			font-size:1em;
 			h2,
 			h3 {
 				margin:0 auto;
@@ -39,10 +39,25 @@
 				line-height:0.9;
 				text-transform:uppercase;
 			}
+			h2 {
+				font-weight:900;
+			}
 			h3 {
-				font-size:2.25em;
+				font-size:2.65em;
 				margin-bottom:2em;
+				font-weight:300;
 			}
 
+		}
+
+		@media screen and (max-width:$grid-large - 1) {
+			.center-content {
+				font-size:0.8em;
+			}
+		}
+		@media screen and (max-width:$grid-medium - 1) {
+			.center-content {
+				font-size:0.65em;
+			}
 		}
 	}

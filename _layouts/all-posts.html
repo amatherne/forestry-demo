@@ -41,7 +41,7 @@ layout: default
 {% endfor %}
 
 <div class="container padding">
-	<h2 class="h1 page-title">{{ page.layout | capitalize }} / Posts</h2>	
+	<h2 class="page-title">{{ page.layout | capitalize }} / Posts</h2>	
 	<div class="grid" id="sort">
 		{% assign all_posts = all_posts | append: all_blogs | append: all_projects | append: all_musics %}
 		{% for p in all_posts %}

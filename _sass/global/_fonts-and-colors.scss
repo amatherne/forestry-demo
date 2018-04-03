@@ -1,7 +1,10 @@
 // body
 // ----
 	body {
-	    background:$bodyBG;
+	    background:#FAFAFA;
+	    .max-width {
+			background-color:$bodyBG;
+		}
 	    font-family:$bodyFont;
 	    color:$bodyTextColor;
 	    line-height:$bodyLineHeight;

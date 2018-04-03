@@ -4,17 +4,19 @@ layout: default
 <!-- layouts/page -->
 <div class="background-image page-banner" style="background-image: url({{ page.banner_image | absolute_url }});">
 	<div class="grid">
-		<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right">
+		<div class="grid__item one-whole text-center {% unless page.show_date == false %}medium-up--one-half medium-up--text-right {% endunless %}">
 			<h1>{{ page.title }}</h1>
 		</div>
-		<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
-			<span class="tags">
-				{% for t in page.tags %}
-					<span>{{ t }}</span>{% unless forloop.last %}-{% endunless %}
-				{% endfor %}
-			</span>
-			<span class="entry-date">{{ page.date | date: "%b %d, %Y" }}</span>
-		</div>
+		{% unless page.show_date == false %}
+			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
+				<span class="tags">
+					{% for t in page.tags %}
+						<span>{{ t }}</span>{% unless forloop.last %}-{% endunless %}
+					{% endfor %}
+				</span>
+				<span class="entry-date">{{ page.date | date: "%b %d, %Y" }}</span>
+			</div>
+		{% endunless %}
 	</div>
 </div>
 <div class="container thin padding">

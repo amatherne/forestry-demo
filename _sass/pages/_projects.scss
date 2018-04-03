@@ -1,7 +1,9 @@
 .template--projects {
-	background-color:$orange;
+	.max-width {
+		background-color:$orange;
+	}
 	.mainContent {
-		padding-top:($bodyLineHeight * 5);
+		padding-top:($bodyLineHeight * 4.5);
 	}
 	.site-header {
 		ul {
@@ -25,9 +27,11 @@
 }
 
 .template--musics {
-	background-color:$green;
+	.max-width {
+		background-color:$green;
+	}
 	.mainContent {
-		padding-top:($bodyLineHeight * 5);
+		padding-top:($bodyLineHeight * 4.5);
 	}
 	.site-header {
 		ul {
@@ -78,9 +82,14 @@
 }
 
 .template--blogs {
-	background-color:$beige;
+	.max-width {
+		background-color:$beige;
+	}
 	.mainContent {
-		padding-top:($bodyLineHeight * 5);
+		padding-top:($bodyLineHeight * 4.5);
+	}
+	.page-title {
+		color:$dark;
 	}
 	.site-header {
 		ul {

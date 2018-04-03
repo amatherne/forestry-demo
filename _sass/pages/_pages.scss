@@ -2,8 +2,11 @@
 // -----
 
 .template--page {
+	.max-width {
+		background-color:$beige;
+	}
 	.mainContent {
-		padding-top:($bodyLineHeight * 5);
+		padding-top:($bodyLineHeight * 4.5);
 	}
 	.site-header {
 		ul {
