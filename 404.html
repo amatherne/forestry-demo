@@ -26,7 +26,7 @@
 		<div class="max-width">
 			<!-- includes/nav -->
 
-<header class="site-header">
+<header class="site-header ">
 	<div class="container">
 		<div class="grid">
 			<div class="grid__item small--one-whole medium--one-third large-up--one-fifth small--text-center">
@@ -116,6 +116,12 @@
 			nav.toggleClass('show');
 			body.toggleClass('locked');
 		})
+
+		setTimeout(function(){
+        	$('.site-header').addClass('fade-in');
+        }, 1000);
+
+
 	})
 </script>
 

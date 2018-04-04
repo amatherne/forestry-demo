@@ -26,7 +26,7 @@
 		<div class="max-width">
 			<!-- includes/nav -->
 
-<header class="site-header">
+<header class="site-header ">
 	<div class="container">
 		<div class="grid">
 			<div class="grid__item small--one-whole medium--one-third large-up--one-fifth small--text-center">
@@ -116,17 +116,23 @@
 			nav.toggleClass('show');
 			body.toggleClass('locked');
 		})
+
+		setTimeout(function(){
+        	$('.site-header').addClass('fade-in');
+        }, 1000);
+
+
 	})
 </script>
 
 			<div class="mainContent">
 				<div class="container">
 					<!-- layouts/musics -->
-<div class="container padding">
-	<h2 class="page-title">Musics / Posts</h2>	
+<div class="container padding fade-in">
+	<h2 class="page-title fade-down">Musics / Posts</h2>	
 	<div class="grid">
 		
-			<div class="grid__item small--one-whole medium--one-quarter large-up--one-quarter">
+			<div class="grid__item small--one-whole medium--one-quarter large-up--one-quarter fade-up">
 				<!-- includes/project-post -->
 <div class="project-post">
 	<a href="/forestry-demo/musics/vetter-kids/">
@@ -143,7 +149,7 @@
 </div>
 			</div>
 		
-			<div class="grid__item small--one-whole medium--one-quarter large-up--one-quarter">
+			<div class="grid__item small--one-whole medium--one-quarter large-up--one-quarter fade-up">
 				<!-- includes/project-post -->
 <div class="project-post">
 	<a href="/forestry-demo/musics/apocalypse-the-apocalypse-day-1/">
@@ -162,6 +168,15 @@
 		
 	</div>
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		// $('.container.padding').addClass('fade-in');
+		setTimeout(function(){
+        	$('.container.padding').addClass('active');
+        }, 1000);
+	})
+</script>
 				</div>
 			</div>
 

@@ -26,7 +26,7 @@
 		<div class="max-width">
 			<!-- includes/nav -->
 
-<header class="site-header">
+<header class="site-header ">
 	<div class="container">
 		<div class="grid">
 			<div class="grid__item small--one-whole medium--one-third large-up--one-fifth small--text-center">
@@ -116,32 +116,38 @@
 			nav.toggleClass('show');
 			body.toggleClass('locked');
 		})
+
+		setTimeout(function(){
+        	$('.site-header').addClass('fade-in');
+        }, 1000);
+
+
 	})
 </script>
 
 			<div class="mainContent">
 				<div class="container">
 					<!-- layouts/page -->
-<div class="background-image page-banner" style="background-image: url(/forestry-demo);">
+<div class="background-image page-banner fade-in" style="background-image: url(/forestry-demo);">
 	<div class="grid">
 		<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right ">
-			<h1>Working with Google Sheets</h1>
+			<h1 class="fade-right">Working with Google Sheets</h1>
 		</div>
 		
 			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
-				<span class="tags">
+				<span class="tags fade-left">
 					
 						<span>Codepen.io</span>
 					
 				</span>
-				<span class="entry-date">Apr 01, 2018</span>
+				<span class="entry-date fade-left">Apr 01, 2018</span>
 			</div>
 		
 	</div>
 </div>
-<div class="container thin padding">
+<div class="container thin padding fade-in">
 	<div class="grid">
-		<div class="grid__item small--hide medium--hide large-up--one-quarter">
+		<div class="grid__item small--hide medium--hide large-up--one-quarter fade-up">
 			<!-- includes/side-feed -->
 
 
@@ -178,7 +184,7 @@
 
 
 		</div>
-		<div class="grid__item one-whole large-up--one-half">
+		<div class="grid__item one-whole large-up--one-half fade-up">
 			
 				<div class="tech">
 					<h5 class="meta-title border-bottom">Tech Used</h5>
@@ -199,10 +205,10 @@
 	            <h2>Some recent work</h2><p>I was recently hired to make an online inventory system for a local bike shop. They wanted any of their mechanics to be able to pull it up on their phone or tablet while checking the fleet. I'll be meeting with the client again this week to add some more functionality!</p><p>See the Pen <a href="http://codepen.io/Pnkdrmmr/pen/edwKOV/">edwKOV</a> by Austin Matherne (<a href="http://codepen.io/Pnkdrmmr">@Pnkdrmmr</a>) on <a href="http://codepen.io/">CodePen</a>.</p>
 	        </div>
 		</div>
-		<div class="grid__item one-whole large-up--one-quarter">
+		<div class="grid__item one-whole large-up--one-quarter fade-up">
 			
 		</div>
-		<div class="grid__item one-whole large-up--hide">
+		<div class="grid__item one-whole large-up--hide fade-up">
 			<!-- includes/side-feed -->
 
 
@@ -241,6 +247,19 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		// $('.container.padding').addClass('fade-in');
+  //       $('.background-image.page-banner').addClass('fade-in');
+		setTimeout(function(){
+        	$('.container.padding').addClass('active');
+        	$('.background-image.page-banner').addClass('active');
+        }, 1000);
+	})
+</script>
+
+
 				</div>
 			</div>
 
