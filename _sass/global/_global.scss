@@ -44,3 +44,55 @@
 }
 
 
+.scroll-trigger,
+.fade-in {
+	$amt:10px;
+	.fade-down {
+		transform: translateY(-$amt);
+		opacity:0;
+		transition: all .3s linear;
+	}
+	.fade-up {
+		transform: translateY($amt);
+		opacity:0;
+		transition: all .3s linear;
+	}
+	.fade-left {
+		transform: translateX(-$amt);
+		opacity:0;
+		transition: all .3s linear;
+	}
+	.fade-right {
+		transform: translateX($amt);
+		opacity:0;
+		transition: all .3s linear;
+	}
+
+	&.active {
+		.fade-down,
+		.fade-up {
+			transform: translateY(0%);
+			opacity:1;
+		}
+		.fade-left,
+		.fade-right {
+			transform: translateX(0%);
+			opacity:1;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,6 +25,7 @@
 		}
 	}
 
+
 	.page-banner {
 		padding:($bodyLineHeight * 8) $bodyLineHeight;
 		position:relative;
@@ -128,10 +129,15 @@
 		}
 	}
 
+	
+
 
 	// Orange
 	&.color-orange-bg {
-		background:$orange;
+		// background:$orange;
+		.max-width {
+			background-color:$orange;
+		}
 
 		.border, 
 		.border-bottom, 
@@ -173,7 +179,7 @@
 			  	}
 			}
 			a {
-				color: $linkColor;
+				color:$red;
 				text-decoration: none;
 				&:hover {
 					color: $linkColorHover;
@@ -190,7 +196,10 @@
 
 	// white
 	&.color-white-bg {
-		background:$beige;
+		// background:$beige;
+		.max-width {
+			background-color:$beige;
+		}
 		.border, 
 		.border-bottom, 
 		.border-top, 
@@ -250,7 +259,10 @@
 	}
 	// Orange
 	&.color-red-bg {
-		background:$red;
+		// background:$red;
+		.max-width {
+			background-color:$red;
+		}
 		.border, 
 		.border-bottom, 
 		.border-top, 
@@ -294,10 +306,10 @@
 			  	}
 			}
 			a {
-				color: $linkColor;
+				color: $dark;
 				text-decoration: none;
 				&:hover {
-					color: $linkColorHover;
+					color: $beige;
 					text-decoration: underline;
 				}
 			}
@@ -311,7 +323,10 @@
 
 	// white
 	&.color-green-bg {
-		background:$green;
+		// background:$green;
+		.max-width {
+			background-color:$green;
+		}
 		.border, 
 		.border-bottom, 
 		.border-top, 

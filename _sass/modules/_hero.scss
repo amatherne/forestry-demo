@@ -32,6 +32,11 @@
 			text-align:center;
 			z-index:2;
 			font-size:1em;
+
+			// fade in 
+			opacity:0;
+			bottom:8vh;
+			transition:all .3s linear;
 			h2,
 			h3 {
 				margin:0 auto;
@@ -48,6 +53,13 @@
 				font-weight:300;
 			}
 
+		}
+
+		&.fade-in {
+			.center-content {
+				opacity:1;
+				bottom:7vh;
+			}
 		}
 
 		@media screen and (max-width:$grid-large - 1) {

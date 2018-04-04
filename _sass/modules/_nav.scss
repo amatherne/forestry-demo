@@ -30,6 +30,32 @@
 				display:block;
 			}
 		}
+		@media screen and (min-width:$grid-medium) {
+			.main-nav {
+				opacity:0;
+				transform: translateY(-5%);
+				transition: all .3s linear;
+			}
+			.logo {
+				img {
+					opacity:0;
+					transform: translateY(-5%);
+					transition:all .2s linear;
+				}
+			}
+			&.fade-in {
+				.main-nav {
+					opacity:1;
+					transform: translateY(0%);	
+				}
+				.logo {
+					img {
+						opacity:1;
+						transform: translateY(0%);
+					}
+				}
+			}
+		}
 		@media screen and (max-width:$grid-medium - 1) {
 			.nav-toggle {
 				position:absolute;

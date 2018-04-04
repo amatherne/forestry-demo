@@ -40,10 +40,10 @@
 {% endfor %}
 
 
-<div class="featured-projects">
+<div class="featured-projects scroll-trigger">
 	<div class="container padding">
-		<h2 class="h1 page-title">Recent Posts</h2>	
-		<div class="grid">
+		<h2 class="h1 page-title fade-down">Recent Posts</h2>	
+		<div class="grid fade-down">
 			{% assign all_posts = all_posts | append: all_blogs | append: all_projects | append: all_musics %}
 		{% for p in all_posts %}
 			{{ p }}
@@ -69,5 +69,9 @@
 			return 0;
 		});
 		$item.detach().appendTo($cont);
+
+		// setTimeout(function(){
+  //       	$('.featured-projects').addClass('scroll-trigger');
+  //       }, 1000);
 	})
 </script>
